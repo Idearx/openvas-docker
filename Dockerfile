@@ -5,7 +5,7 @@ FROM mikesplain/openvas
 FROM ubuntu:16.04
 
 COPY --from=0 /var/lib/openvas /var/lib/openvas
-COPY config/redis.config /etc/redis/redis.config
+#COPY config/redis.config /etc/redis/redis.config
 COPY config/sasl_passwd_template /
 COPY config/main.cf_template /
 COPY config/ldapUserSync/* /ldapUserSync/

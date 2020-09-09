@@ -1,7 +1,6 @@
 # Start by pulling down our existing container
 # to sync 1.9 Gb of data from OpenVAS.
-FROM mikesplain/openvas
-
+#FROM mikesplain/openvas
 FROM ubuntu:18.04
 
 COPY --from=0 /var/lib/openvas /var/lib/openvas
